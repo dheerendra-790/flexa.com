@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100vw;
+    height: 15vh;
+    background-color: rgba(0, 0, 255, 0.653);
+    display: flex;
+    background-image: radial-gradient(#ffef00, #0000008c);
+}
+
+.mainbox h1 {
+    text-shadow: 6px 0px 5px #101010;
+    color: #7a0808;
+}
+
+ul {
+    margin-left: 180px;
+    display: flex;
+}
+
+.btn1 {
+    width: 70px;
+    height: 30px;
+    border-radius: 26px 0px 0px 31px;
+    background-color: gray;
+    box-shadow: 2px 3px 9px;
+    margin-top: 41px;
+    position: absolute;
+    right: 140px;
+}
+
+.btn2 {
+    width: 70px;
+    height: 30px;
+    border-radius: 0px 026px 26px 0px;
+    background-color: gray;
+    box-shadow: 2px 3px 9px;
+    margin-top: 41px;
+    position: absolute;
+    right: 70px;
+}
+
+.bell img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10pc;
+    margin: 36px;
+    position: absolute;
+    right: 200px;
+}
+.bell img:hover {
+    transform: rotateY('360deg');
+    transition: all 1s ease-out;
+}
+
+.hemberger img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10pc;
+    margin: 36px;
+    position: absolute;
+    left: -16px;
+}
+
+.menu {
+    position: absolute;
+    left: -227px;
+    display: flex;
+    width: 0;
+    top: 26px;
+}
+
+.menu .dropdown {
+    display: block;
+    margin: 84px 227px;
+    background-image: radial-gradient(gold, #595325);
+}
+.dropdown li{
+        font-size: 23px;
+        margin: 1px;
+        list-style: none;
+        font-weight: 700;
+}
+.dropdown li:hover{
+    cursor: pointer;
+    background-color: white;
+    color: transparent;
+    text-shadow: 0 0 3px black;
+}
+
+.mainbox {
+    display: flex;
+    width: 108px;
+    height: 110px;
+    position: absolute;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    top: -105px;
+    left: -29px;
+    border-radius: 100px;
+    margin: 50px;
+    box-shadow: 0px 0px 22px aqua;
+    animation: myfirst 2s infinite linear;
+}
+
+@keyframes myfirst {
+    0% {
+        transform: translate(50%, 50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(50%, 50%) rotate(360deg);
+    }
+}
+
+.mainbox:hover {
+    box-shadow: 0px 0px 22px 6px aqua;
+}
+
+.box1 {
+    background-image: linear-gradient(red, green);
+    display: flex;
+    position: absolute;
+    top: 63px;
+    border-radius: 0px 0px 100px 100px;
+    width: 89px;
+    height: 43px;
+}
+
+.box2 {
+    background-image: linear-gradient(gold, blue);
+    width: 89px;
+    height: 43px;
+    display: flex;
+    position: absolute;
+    top: 3px;
+    border-radius: 100px 100px 0px 0px;
+}
+
+.hidden li {
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+    margin: 31px;
+    padding: 10px;
+    text-shadow: 0px 0px 3px black;
+    font-size: 23px;
+    color: black;
+}
+
+.hidden li:hover {
+    color: transparent;
+    cursor: pointer;
+    /* font-weight: 10px; */
+}
+
+#content {
+    margin: 30px 210px;
+    text-align: center;
+    background-color: gold;
+}
+
+body {
+    width: 100%;
+    height: 85vh;
+    align-items: center;
+    transition: all 10s ease;
+    background-image: url("g2.jpg");
+}
+
+.slider {
+    width: 91%;
+    height: 400px;
+    background-image: url("call\ of\ duty.jpg");
+    animation: slide 20s linear infinite;
+    background-size: 100% 100%;
+    position: absolute;
+    box-shadow: -30px 25px 30px -8px black;
+    display: flex;
+    margin: 71px 48px;
+    border-radius: 145px;
+    background-size: 100% 100%;
+    animation: slide 3s linear ease-out;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url("call\ of\ duty.jpg");
+    }
+
+    25% {
+        background-image: url("pubg\ pc.webp");
+    }
+
+    50% {
+        background-image: url("Days-Gone-Game-Information.jpg");
+    }
+
+    75% {
+        background-image: url("god\ of\ war.jpg");
+    }
+
+    100% {
+        background-image: url("gta\ 5.jpg");
+    }
+}
+
+.btn button {
+    position: absolute;
+    left: 580px;
+    bottom: -107px;
+    width: 145px;
+    height: 62px;
+    font-size: 24px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 40px;
+}
+
+.btn button:hover {
+    background-color: white;
+    background-image: url("Screenshot_10.png");
+    box-shadow: 0px 0px 26px 5px white;
+    object-fit: cover;
+    color: rgba(0, 0, 0, 0);
+    transition: all 1s ease;
+    font-size: 0px;
+}
+
+.card {
+    display: grid;
+    width: 100vw;
+    height: 128vh;
+    margin: 567px 33px;
+    justify-content: flex-start;
+}
+
+#content2 {
+    background-color: gold;
+    margin-top: -22px;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    margin: 14px;
+    border-radius: 24px;
+    box-shadow: -7px 6px 15px 6px #000000;
+}
+
+.card img:hover {
+    width: 202px;
+    height: 202px;
+
+}
+
+.item1 {
+    display: flex;
+    box-shadow: 3px 3px 3px 3px black;
+    border-radius: 0px 0px 0px 38px;
+    text-shadow: 0px 1px 3px;
+    background-color: #a2a2a5e8;
+    width: 95%;
+}
+
+.text {
+    font-size: x-large;
+    border: 2px solid black;
+    margin: 13px;
+    border-radius: 12px;
+}
+
+.item1 button {
+    width: 186px;
+    height: 42px;
+    margin: 29px 92px;
+    font-size: 17px;
+    border-radius: 17px;
+    background-image: radial-gradient(#dcdde866, #ff0000);
+    border: 0px;
+}
+
+.item1 button:hover {
+    font-weight: bolder;
+    box-shadow: 0px 0px 26px 5px rgb(255, 0, 0);
+    ;
+    transition: all 500ms ease;
+}
+
+.option {
+    display: flex;
+    width: 79%;
+    height: 10vh;
+    background-color: rgb(188, 222, 223);
+    margin: 126px;
+
+}
+
+.option1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.option1:hover {
+    width: 102vw;
+    height: 11vh;
+    box-shadow: 3px -4px 6px 3px black;
+}
+
+.card2 {
+    display: flex;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    margin-top: 11px;
+}
+
+.item2 img {
+    display: grid;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    margin: 3px;
+    border-radius: 21px;
+    box-shadow: 3px 3px 9px 4px black;
+}
+
+.item2 img:hover {
+    height: 310px;
+}
+
+.item2 p {
+    font-size: 19px;
+    position: relative;
+    top: -41px;
+    font-weight: bolder;
+    text-shadow: 1px 2px 4px #0e0e0e;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    color: red;
+}
+
+.foot {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    margin-top: 44px;
+    align-items: flex-end;
+}
